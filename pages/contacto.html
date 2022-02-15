@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat+Alternates:wght@400&family=Roboto:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body class="body">
+    <header class="head">
+        <div class="header__logo">
+            <h1 class="logo">GMusic</h1>
+            <p class="sub">Producciones</p>
+        </div>
+        <div class="redes">
+            <ul class="redes__estilo">
+                <li class="redes__estilo--line">
+                    <a href="https://instagram.com"><img src="../img/instagram.png" alt="instagram" width=32px></a>
+                </li>
+                <li class="redes__estilo--line">
+                    <a href="https://facebook.com"><img src="../img/facebook.png" alt="facebook" width=31px></a>
+                </li>
+                <li class="redes__estilo--line">
+                    <a href="https://youtube.com"><img src="../img/youtube.png" alt="youtube" height=30px></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="naveg">
+        <ul class="naveg__bot">
+            <li class="naveg__bot--border"><a href="../index.html">Inicio</a></li>
+            <li class="naveg__bot--border"><a href="servicios.html">Servicios</a></li>
+            <li class="naveg__bot--border"><a href="trabajos.html">Trabajos</a></li>
+            <li class="naveg__bot--border"><a href="equipos.html">Equipos</a></li>
+            <li class="naveg__bot--border"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="contacto">
+        <div>
+            <h1 class="sub2">Contacto</h1>
+            <p class="sub">Sentite libre de contactarnos por cualquiera de estas opciones, o por la misma pagina web completando el formulario!</p>
+            <p class="sub">WhatsApp: +54 9 1234-5678</p>
+            <p class="sub">Email: gmusicproducciones@gmail.com</p>
+        </div>
+        <div class="formulario">
+            <form action="">
+                <fieldset class="formulario__tamaño">
+                    <legend class="formulario__tamaño--font">Formulario de Contacto</legend>
+                    <div>
+                        <div class="formulario__tamaño--font">Nombre y Apellido:</div>
+                        <input type="text" name="nombre_apellido" id="nombre_apellido">
+                    </div>
+                    <div>
+                        <div class="formulario__tamaño--font">Email:</div>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <div class="formulario__tamaño--font">Telefono:</div>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+                    <div>
+                        <div class="formulario__tamaño--font">Por donde preferis que te contactemos?</div>
+                        <select name="contacto">
+                            <option value="contactoEmail">Email</option>
+                            <option value="contactoLlamada">Llamada</option>
+                            <option value="ContactoWhatsapp">WhatsApp</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="formulario__tamaño--font">Escribinos tu mensaje!</div>
+                        <textarea></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <div class="secciones__separar">
+    <footer class="sub">© 2022 GMusic</footer>
+    </div>
+</body>
+</html>
