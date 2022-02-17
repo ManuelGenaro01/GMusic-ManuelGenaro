@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat+Alternates:wght@400&family=Roboto:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="UTF-8">
@@ -9,12 +11,13 @@
     <title>Servicios</title>
 </head>
 <body class="body">
-    <header class="head">
-        <div class="header__logo">
+    <header class="head row">
+        <div class="header__logo col-lg-2">
             <h1 class="logo">GMusic</h1>
             <p class="sub">Producciones</p>
         </div>
-        <div class="redes">
+        <div class="col-lg-8"></div>
+        <div class="redes col-lg-2">
             <ul class="redes__estilo">
                 <li class="redes__estilo--line">
                     <a href="https://instagram.com"><img src="../img/instagram.png" alt="instagram" width=32px></a>
@@ -29,31 +32,32 @@
         </div>
     </header>
     <nav class="naveg">
-        <ul class="naveg__bot">
-            <li class="naveg__bot--border"><a href="../index.html">Inicio</a></li>
-            <li class="naveg__bot--border"><a href="servicios.html">Servicios</a></li>
-            <li class="naveg__bot--border"><a href="trabajos.html">Trabajos</a></li>
-            <li class="naveg__bot--border"><a href="equipos.html">Equipos</a></li>
-            <li class="naveg__bot--border"><a href="contacto.html">Contacto</a></li>
+        <ul class="naveg__bot row">
+            <li class="naveg__bot--border col-md-2"></li>
+            <li class="naveg__bot--border col-md-2"><a href="../index.html">Inicio</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="servicios.html">Servicios</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="trabajos.html">Trabajos</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="equipos.html">Equipos</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <div class="secciones">
-        <ul class="serviciosEquipos">
-            <li>
+    <div class="secciones container">
+        <ul class="serviciosEquipos row">
+            <li class="col-md-4">
                 <img src="../img/composición.jpg" alt="Composición" class="serviciosEquipos__imagenes">
                 <div>
                     <h3 class="sub3">Composicion</h3>
                     <p class="sub3">Te ayudamos a escribir tu obra musical!</p>
                 </div>
             </li>
-            <li>
+            <li class="col-md-4">
                 <img src="../img/grabacion.jpg" alt="Grabacion" class="serviciosEquipos__imagenes">
                 <div>
                     <h3 class="sub3">Grabacion</h3>
                     <p class="sub3">Contamos con diferentes instrumentos, equipos, etc... Para poder grabar tu obra</p>
                 </div>
             </li>
-            <li>
+            <li class="col-md-4">
                 <img src="../img/postprod.jpg" alt="Post-Producción" class="serviciosEquipos__imagenes">
                 <div>
                     <h3 class="sub3">Post-Producción</h3>

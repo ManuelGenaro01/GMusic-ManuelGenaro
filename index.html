@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat+Alternates:wght@400&family=Roboto:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <meta charset="UTF-8">
@@ -9,12 +11,13 @@
     <title>GMusic</title>
 </head>
 <body class="body">
-    <header class="head">
-        <div class="header__logo">
+    <header class="head row">
+        <div class="header__logo col-lg-2">
             <h1 class="logo">GMusic</h1>
             <p class="sub">Producciones</p>
         </div>
-        <div class="redes">
+        <div class="col-lg-8"></div>
+        <div class="redes col-lg-2">
             <ul class="redes__estilo">
                 <li class="redes__estilo--line">
                     <a href="https://instagram.com"><img src="./img/instagram.png" alt="instagram" width=32px></a>
@@ -30,36 +33,39 @@
     </header>
     
     <nav class="naveg">
-        <ul class="naveg__bot">
-            <li class="naveg__bot--border"><a href="./index.html">Inicio</a></li>
-            <li class="naveg__bot--border"><a href="pages/servicios.html">Servicios</a></li>
-            <li class="naveg__bot--border"><a href="pages/trabajos.html">Trabajos</a></li>
-            <li class="naveg__bot--border"><a href="pages/equipos.html">Equipos</a></li>
-            <li class="naveg__bot--border"><a href="pages/contacto.html">Contacto</a></li>
+        <ul class="naveg__bot row">
+            <li class="naveg__bot--border col-md-2"></li>
+            <li class="naveg__bot--border col-md-2"><a href="./index.html">Inicio</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="pages/servicios.html">Servicios</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="pages/trabajos.html">Trabajos</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="pages/equipos.html">Equipos</a></li>
+            <li class="naveg__bot--border col-md-2"><a href="pages/contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <section class="secciones">
-        <div>
+    <section class="secciones container">
             <h2 class="sub2">Nosotros</h2>
-        </div>
-        <div>
             <p class="sub">
             Nosotros somos GMusic Producciones.
             Desde 2011 brindamos diferentes soluciones tanto artisticas como tecnicas.
             Nuestros trabajos abarcan la composicion, grabacion y post-produccion de solistas, duetos, o hasta bandas completas, ya sean originales o covers.
             Contamos también con un equipo variado de instrumentos, amplificadores, diferentes pedales con diferentes efectos para tu instrumentos.
             </p>
-        </div>
     </section>
     <div class="secciones__separar">
-    <section class="secciones">
+    <section class="secciones container">
             <h1 class="sub2">Nuestros trabajos</h1>
-            <div class="video1">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MkNeIUgNPQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="row">
+                <div class="video1 col-lg-12">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MkNeIUgNPQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
             </div>
-            <div>
-                <iframe width="500" height="281" src="https://www.youtube.com/embed/Ssvu2yncgWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1"></iframe>
-                <iframe width="500" height="281" src="https://www.youtube.com/embed/u4PI5p5bI9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1"></iframe>
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe width="500" height="281" src="https://www.youtube.com/embed/Ssvu2yncgWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1"></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <iframe width="500" height="281" src="https://www.youtube.com/embed/u4PI5p5bI9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1"></iframe>
+                </div>
             </div>
     </section>
     </div>

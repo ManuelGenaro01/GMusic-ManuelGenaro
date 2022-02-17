@@ -7,15 +7,15 @@
      background-color: #a5a5a5;
  }
 .header__logo{
-    text-align: center;
-    grid-area:logo;
     animation-name: efectoLogo;
     animation-duration: 1s;
+    text-align: center;
  }
  .redes{
      text-align: center;
      animation-name: efectoRedes;
      animation-duration: 1s;
+     padding-top: 5rem;
  }
  .redes__estilo{
      list-style-type: none;
@@ -43,11 +43,8 @@
     text-align: center;
 }
  .secciones{
-     display: flex;
      text-align: center;
      padding:2rem;
-     grid-area:cont;
-     flex-direction: column;
      animation-name: secciones;
      animation-duration: 1s;
  }
@@ -58,14 +55,11 @@
      padding:1rem;
  }
 .naveg{
-    position:sticky;
     top:0px;
-    grid-area: nav;
     animation-name: efecto_nav;
     animation-duration: 1s;
  }
 .naveg__bot{
-    display:flex;
     list-style-type: none;
     overflow:hidden;
     background-color: black;
@@ -75,7 +69,7 @@
     text-decoration: none;
     color:white;
     font-family: 'Open Sans', sans-serif;
-    font-size:1.3rem;
+    font-size:100%;
     transition: font-size 0.5s;
 }
 .naveg__bot li a:hover{
@@ -83,20 +77,17 @@
 }
 .serviciosEquipos{
     width:100%;
-    display:flex;
     list-style-type: none;
     overflow:hidden;
     text-align: center;
 }
 .serviciosEquipos li{
-    width:450px;
-    display: flex;
+    width: 100%;
     text-align: center;
-    flex-direction: column;
     padding:2rem;
 }
-.serviciosEquipos__imagenes{
-    flex-wrap: nowrap;
+.serviciosEquipos li img{
+    width: 100%;
 }
 
 .formulario__tamaño{
@@ -114,95 +105,26 @@
     height:10rem;
 }
 footer{
-    grid-area:footer;
     text-align: center;
 }
-.body{
-    display:grid;
+.naveg__bot--border{
+    padding-bottom:1rem;
+    padding-top:1rem;
+    margin:0;
+    border-right: solid 0.13rem;
+    border-left:solid 0.13rem;
+    background-color: #252525;
 }
-@media screen and (min-width:0px) and (max-width:1023px) {
-    .body{
-        grid-template-areas:"logo"
-                            "nav"
-                            "cont"
-                            "footer";
-    }
+@media screen and (max-width: 768px) {
     .redes{
-        padding-bottom: 2rem;
-    }
-    .naveg__bot{
-        text-align: center;
-        flex-wrap:wrap;
-    }
-    
-    .naveg__bot--border{
-        width: 20%;
-        padding-bottom:1rem;
-        padding-top:1rem;
-        margin:0;
-        border-right: solid 0.13rem;
-        border-left:solid 0.13rem;
-        background-color: #252525;
-        align-items: center;
-    }
-    .contacto{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-bottom: 2rem;
-    }
-    .serviciosEquipos{
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        padding-top: 0;
     }
 }
-@media screen and (min-width:1024px) {
-    .body{
-        grid-template-areas:"logo"
-                            "nav"
-                            "cont"
-                            "footer";
-    }
-    .head{
-        width: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .header__logo{
-        padding-top:1rem;
-        padding-left:1rem;
-    }
+@media screen and (min-width: 769px) {
     .redes{
-        padding-right:2rem;
+        padding-top: 4rem;
     }
-    .naveg__bot{
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .naveg__bot--border{
-        width: 20%;
-        padding-bottom:1rem;
-        padding-top:1rem;
-        margin:0;
-        border-right: solid 0.13rem;
-        border-left:solid 0.13rem;
-        background-color: #252525;
-    }
-    .contacto{
-        text-align: left;
-        display:flex;
-        padding: 2rem;
-    }
-    .serviciosEquipos{
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content:space-evenly;
-    }
-    
+}
 @keyframes efectoLogo{
     0%{
         transform:translate(-100vw,0);
@@ -234,5 +156,4 @@ footer{
     100%{
         transform: scale(1);
     }
-}
 }
